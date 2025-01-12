@@ -26,6 +26,9 @@ public class Main {
         if (clientSocket != null) {
           clientSocket.close();
         }
+        else{
+          System.out.println("socket null");
+        }
       } catch (IOException e) {
         System.out.println("IOException: " + e.getMessage());
       }
